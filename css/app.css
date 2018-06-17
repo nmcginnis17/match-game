@@ -1,0 +1,197 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #41172e;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 300;
+    color: #999;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: #999;
+    padding: 32px;
+    border: 2px solid #3A3AFF;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    transition: 0.5s ease;
+    height: 125px;
+    width: 125px;
+    background: #3A3AFF;
+    font-size: 0;
+    color: #242424;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: matrix(360deg);
+    transition: 0.5s ease;
+    background: #B54B00;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.noClick {
+    pointer-events: none;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #fff;
+    font-size: 33px;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #3A3AFF;
+    background: #999;
+    width: 660px;
+    border: solid;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.score-panel .stars {
+    margin: 0 5px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.modal {
+    display: none;
+    overflow: auto;
+}
+
+.modal-open {
+    transition: 1s ease;
+    display: inline-block;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    text-align: center;
+    background: #999;
+    margin: auto;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    padding: 20px;
+    height: 500px;
+    width: 65%;
+}
+
+.moves-container p {
+  margin: 0;
+}
+
+li, i {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #3A3AFF;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    margin: 2em;
+}
+
+.stars-container {
+    width: 100%;
+}
+
+.moves-container {
+    width: 46%;
+}
+
+.time-container {
+    width: 45%;
+}
+
+.restart {
+    text-align: right;
+    cursor: pointer;
+}
+
+.restart:hover {
+    transform: rotate(360deg);
+    transition: 1s ease;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close"></span>
+            <h3 class="winning-message">Congratulaions, You Won!</h3>
+            <button class="new-game">New Game</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Memory Match</h1>
+        </header>
+
+        <section class="score-panel">
+            <div class="stars-container">
+          	   <ul class="stars">
+          		     <li class="star-1"><i class="fas fa-star"></i></li>
+          		     <li class="star-2"><i class="fas fa-star"></i></li>
+          		     <li class="star-3"><i class="fas fa-star"></i></li>
+          	   </ul>
+            </div>
+
+            <div class="moves-container">
+          	   <p>Moves: <span class="moves">0</span></p>
+            </div>
+
+            <div class="time-container">
+          	   <label class="min">00</label>:<label class="sec">00</label>
+            </div>
+
+            <div class="restart">
+          	   <i class="fa fa-repeat"></i>
+          	</div>
+        </section>
+
+          <ul class="deck"></ul>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
