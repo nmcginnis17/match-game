@@ -11,7 +11,7 @@ let cardsList = [
 ];
 cardsList = cardsList.concat(cardsList);
 
-// Shuffle function from http://stackoverflow.com/a/2450976
+// Shuffle function - source: http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -29,7 +29,7 @@ let totalSec = 0;
 let min = document.querySelector(".min");
 let sec = document.querySelector(".sec");
 
-// Timer code from Stackoverflow with some changes: https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+// Timer code from Stackoverflow with some changes - source: https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 function startTimer(){
 	function setTime() {
 		++totalSec;
