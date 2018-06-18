@@ -81,6 +81,7 @@ function resetCards() {
 		selectedCards = [];
 		matchedCards = [];
 	});
+  location.reload()
 }
 
 // Display Modal
