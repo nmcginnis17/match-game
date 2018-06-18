@@ -11,8 +11,8 @@ This is a memory card game, where you have to match 2 cards pictures together. I
 
 ## Dependencies
 
-Included within this project are the following:
-Font Awesome -> https://use.fontawesome.com/releases/v5.0.13/css/all.css
-BootStrap -> https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
-Google Fonts -> https://fonts.googleapis.com/css?family=Indie+Flower
+Included within this project are the following: <br>
+Font Awesome -> https://use.fontawesome.com/releases/v5.0.13/css/all.css <br>
+BootStrap -> https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css <br>
+Google Fonts -> https://fonts.googleapis.com/css?family=Indie+Flower <br>
 jQuery -> https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
